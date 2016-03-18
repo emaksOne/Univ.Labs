@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "volochov_lab2", "volochov_lab2\volochov_lab2.vcxproj", "{AEB7FAFF-31C6-463A-8A41-60D1E0DBEFC6}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "f_process", "f_process\f_process.vcxproj", "{3FFAF377-9BE8-436B-9707-FCAA80CDB4E6}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "g_process", "g_process\g_process.vcxproj", "{D680E09B-AA0D-4252-AB04-328F8523D549}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AEB7FAFF-31C6-463A-8A41-60D1E0DBEFC6}.Debug|Win32.ActiveCfg = Debug|Win32
+		{AEB7FAFF-31C6-463A-8A41-60D1E0DBEFC6}.Debug|Win32.Build.0 = Debug|Win32
+		{AEB7FAFF-31C6-463A-8A41-60D1E0DBEFC6}.Release|Win32.ActiveCfg = Release|Win32
+		{AEB7FAFF-31C6-463A-8A41-60D1E0DBEFC6}.Release|Win32.Build.0 = Release|Win32
+		{3FFAF377-9BE8-436B-9707-FCAA80CDB4E6}.Debug|Win32.ActiveCfg = Debug|Win32
+		{3FFAF377-9BE8-436B-9707-FCAA80CDB4E6}.Debug|Win32.Build.0 = Debug|Win32
+		{3FFAF377-9BE8-436B-9707-FCAA80CDB4E6}.Release|Win32.ActiveCfg = Release|Win32
+		{3FFAF377-9BE8-436B-9707-FCAA80CDB4E6}.Release|Win32.Build.0 = Release|Win32
+		{D680E09B-AA0D-4252-AB04-328F8523D549}.Debug|Win32.ActiveCfg = Debug|Win32
+		{D680E09B-AA0D-4252-AB04-328F8523D549}.Debug|Win32.Build.0 = Debug|Win32
+		{D680E09B-AA0D-4252-AB04-328F8523D549}.Release|Win32.ActiveCfg = Release|Win32
+		{D680E09B-AA0D-4252-AB04-328F8523D549}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
