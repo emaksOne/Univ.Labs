@@ -2,7 +2,25 @@
 
 import numpy as np
 
+def simpleProjectOfEllipseToSubspace(center, ellipseShapeMatrix, initDimension, projectionCoordinates):
+   # sec_cen, sec_mat = findProjectOfEllipseToSubspace(center, ellipseShapeMatrix,initDimension, projectionCoordinates)
+    allCoord = [i for i in range(0,initDimension)]
+    diff = set(allCoord) - set(projectionCoordinates)
+    for e in diff:
+        ellipseShapeMatrix = np.delete(ellipseShapeMatrix, e, 0)
+        ellipseShapeMatrix = np.delete(ellipseShapeMatrix, e, 1)
+    newCenter = np.array([center[projectionCoordinates[0]], center[projectionCoordinates[1]]])
+
+    # print(newCenter, sec_cen)
+    # print('--------')
+    # print(ellipseShapeMatrix)
+    # print('--------')
+    # print(sec_mat)
+    return newCenter, ellipseShapeMatrix
+
+
 def findProjectOfEllipseToSubspace(center, ellipseShapeMatrix, initDimension, projectionCoordinates):
+
     """Projects n-dimesnaional ellipsoid into 2d plane.
 
     shape_matrix - shape matrix of ellipsoid
@@ -11,6 +29,7 @@ def findProjectOfEllipseToSubspace(center, ellipseShapeMatrix, initDimension, pr
     For e. g. if projection_coordinates=[0, 1] and dimension = 3, than projection
     onto xy plane will be computed"""
     # basis of subspace, ellipsoid is being projected
+
     projectionCoordinates.sort()
     projectionDimension = len(projectionCoordinates)
 
